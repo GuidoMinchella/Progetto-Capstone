@@ -1,0 +1,51 @@
+/* Colore di sfondo rosso per la navbar */
+.navbar {
+  background-color: #FF0000; /* Rosso per lo sfondo della navbar */
+  display: flex; /* Usa Flexbox per il layout */
+  justify-content: space-between; /* Spazio tra il logo e i pulsanti */
+  align-items: center; /* Centra verticalmente gli elementi */
+  padding: 0 20px; /* Distanza interna laterale */
+  height: 80px; /* Altezza della navbar */
+}
+
+/* Logo della navbar */
+.navbar .logo img {
+  height: 70px; /* Imposta l'altezza del logo uguale a quella della navbar */
+  width: auto; /* Mantieni le proporzioni del logo */
+}
+
+/* Links nella navbar (pulsanti "Home" e "Vetture" accanto al logo) */
+.navbar-links {
+  display: flex;
+  gap: 30px; /* Distanza tra i pulsanti */
+  align-items: center; /* Centra verticalmente i pulsanti */
+  height: 70px; /* Garantisce che i pulsanti siano all'altezza della navbar */
+  flex-grow: 1; /* Permette ai pulsanti di occupare lo spazio rimanente */
+}
+
+/* Stile per ogni pulsante */
+.nav-link {
+  color: #008000; /* Colore verde per il testo dei pulsanti */
+  background-color: #ffffff; /* Colore di sfondo (bianco) */
+  padding: 10px 20px; /* Padding interno per i pulsanti */
+  border-radius: 5px; /* Angoli arrotondati */
+  text-decoration: none; /* Rimuove la sottolineatura */
+  font-weight: bold; /* Testo in grassetto */
+  font-size: 30px; /* Imposta un font più grande */
+  height: 100%; /* Imposta l'altezza dei pulsanti uguale all'altezza della navbar */
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Centra verticalmente il testo nei pulsanti */
+  transition: color 0.3s ease, background-color 0.3s ease; /* Aggiungi transizione al cambiamento del colore */
+}
+
+/* Effetto hover: pulsante diventa verde con testo bianco */
+.nav-link:hover {
+  background-color: #008000; /* Colore verde per lo sfondo */
+  color: #ffffff; /* Colore bianco per il testo */
+}
+
+/* Pulsante "Accedi" a destra della navbar */
+.navbar-links .nav-link.accedi-btn {
+  margin-left: 1150px; /* Allinea il pulsante "Accedi" a destra */
+}

@@ -1,0 +1,75 @@
+/* Reset margini e padding */
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Sfondo a tutta larghezza e altezza */
+.rental-box {
+  background-image: url("/public/assets/imgbg2.jpg"); /* <-- Path corretto */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  width: 100%;
+  min-height: calc(100vh - 80px); /* Altezza viewport meno navbar */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+/* Box centrale */
+.booking-form {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+/* Titoli e input */
+.booking-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.booking-form label {
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.booking-form input,
+.booking-form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+/* Pulsante */
+.booking-form button {
+  width: 100%;
+  background-color: #28a745;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+.booking-form button:hover {
+  background-color: #218838;
+}
+
+/* Checkbox + coupon */
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
