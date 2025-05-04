@@ -1,0 +1,295 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+.rental-box {
+  background: url('/public/assets/imgbg4.jpg') no-repeat center center/cover;
+  height: calc(100vh - 60px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 60px;
+}
+
+.booking-form {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 30px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.booking-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.checkbox-group {
+  text-align: center;
+}
+
+.coupon-btn {
+  background-color: #c8a97e;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.coupon-input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #c8a97e;
+  border-radius: 4px;
+}
+
+button[type="submit"],
+.booking-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #c8a97e;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.error-message {
+  background-color: #ffdddd;
+  color: #d8000c;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+/* Featured Cars */
+.featured-cars {
+  padding: 40px 20px;
+  background-color: #fff;
+  text-align: center;
+  position: relative;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-family: 'Playfair Display', serif;
+}
+
+.featured-scroll {
+  display: flex;
+  overflow-x: auto;
+  gap: 16px;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 10px;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+}
+
+.featured-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.car-card {
+  flex: 0 0 auto;
+  width: 250px;
+  background-color: #fafafa;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  scroll-snap-align: center;
+}
+
+.car-img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.car-info {
+  padding: 15px;
+  text-align: left;
+}
+
+.car-info h3 {
+  margin: 0 0 10px;
+  font-size: 1.1rem;
+}
+
+.car-info p {
+  margin: 0;
+  font-weight: bold;
+  color: #333;
+}
+
+.scroll-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #c8a97e;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  z-index: 2;
+}
+
+.scroll-button.left {
+  left: 10px;
+}
+
+.scroll-button.right {
+  right: 10px;
+}
+
+@media (max-width: 768px) {
+  .scroll-button {
+    display: none;
+  }
+}
+
+.benefits-section {
+  background-color: #f9f9f9;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.benefits-grid {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.benefit-card {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: var(--shadow-card);
+  flex: 1 1 250px;
+  max-width: 350px;
+  transition: transform 0.3s ease;
+}
+
+.benefit-card:hover {
+  transform: translateY(-5px);
+}
+
+.benefit-icon {
+  font-size: 40px;
+  color: var(--accent-gold);
+  margin-bottom: 20px;
+}
+
+.benefit-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.benefit-card p {
+  color: var(--text-gray);
+}
+
+/* Testimonials */
+.testimonials-section {
+  background-color: #1a1a1a;
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.testimonials-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.testimonial-card {
+  background-color: #2d2d2d;
+  padding: 30px;
+  border-radius: 10px;
+  flex: 1 1 300px;
+  max-width: 350px;
+  box-shadow: var(--shadow-card);
+  color: white;
+}
+
+.testimonial-card .stars {
+  color: var(--accent-gold);
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.testimonial-card h4 {
+  margin-top: 15px;
+  color: var(--accent-gold);
+}
+
+/* Footer */
+.footer-section {
+  background-color: #1a1a1a;
+  color: white;
+  padding: 60px 20px;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-column {
+  flex: 1 1 250px;
+}
+
+.footer-column h3 {
+  color: white;
+  margin-bottom: 20px;
+}
+
+.footer-column p,
+.footer-column li {
+  font-size: 0.95rem;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
